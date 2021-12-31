@@ -1,0 +1,127 @@
+*, body, html {
+    padding: 0;
+    margin: 0
+}
+
+#chat, a, body, html {
+    color: #fff
+}
+
+body, html {
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    font-size: 14px;
+    -webkit-user-select: none
+}
+
+a {
+    text-decoration: none
+}
+
+.ui_element {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2
+}
+
+#chat {
+    display: block;
+    z-index: 0;
+    line-height: 24px;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: Myriad Pro, Segoe UI, Verdana, sans-serif;
+    font-size: 16px;
+    letter-spacing: .4px;
+    margin-left: 15px
+}
+
+@media screen and (min-height:1080px) {
+    #chat {
+        font-size: 18px !important;
+        font-weight: 700
+    }
+}
+
+#chat ul#chatMessages {
+    overflow-y: auto;
+    height: 285px;
+    margin-top: 2vh;
+    /*2vh*/
+    transform: rotate(180deg);
+    /*width:37vw; /* old: 37vw*/
+    width: 800px;
+    padding: 10px 20px;
+    /* old padding: 10px 20px*/
+    list-style-type: none
+}
+
+#chat ul#chatMessages > li {
+    transform: rotate(-180deg)
+}
+
+#chat input#chatInput {
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    outline: 0;
+    border: none;
+    font-family: Myriad Pro, Open Sans, sans-serif;
+    font-size: 13px;
+    line-height: 35px;
+    width: 35vw;
+    padding: 5px 5px 5px 15px
+}
+
+::-webkit-scrollbar {
+    width: 15px
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 17, 0, 0.3);
+    border-radius: 25px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 17, 0, 0.8)
+}
+
+/* IDK checkbox or smth */
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox+label.css-label {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked+label.css-label:after {
+    content: 'x';
+    color: white;
+}
+
+label.css-label {
+    background: #7b3784;
+    border-radius: 2px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
