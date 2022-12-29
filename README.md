@@ -1,6 +1,6 @@
 # FivM Custom Chat
 
-Simple FiveM chat script that takes SAMP chat as insipration. (THIS SCRIPT MAY CONTAIN BUGS)
+Simple FiveM chat script that takes SAMP chat as insipration.
 ![Preview](https://github.com/AljazOblonsek/fivem-custom-chat/blob/main/preview.gif)
 
 ## Getting started
